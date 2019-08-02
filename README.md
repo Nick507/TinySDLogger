@@ -6,7 +6,7 @@ TinySDLogger uses software SPI, because partial writing approach requires hold o
 To minimize code size, library supports only FAT32 filesystem.
 Since library does not use in memory sector buffer (512 bytes), it is not possible to make partial changes in sectors. To make possible to append log file and keep FAT consistent, TinySDLogger implements the following approaches:
 - Use first 32 bytes (size of file record) of second sector of root directory to store log file
-- Use +128 sectors offset to store log file data (512 size of sector / 4 bytes per FAT32 record)
+- Use +128 clusters offset to store log file data (512 size of sector / 4 bytes per FAT32 record)
 - Use consequent allocation of sectors for log file. Benefit of this approach is that we do not need to search for free sector to append file, and do not do full scan during open file to find its last sector 
 
 TinySDLogger derived from Print class, which allows to use familiar print methods.
