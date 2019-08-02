@@ -20,6 +20,7 @@ Before first usage, SD card must be prepared:
 1. Format SD card with FAT32
 2. Create 16 empty files (any names)
 3. Delete files
+
 These steps must be done only once.
 
 # Consumed memory
