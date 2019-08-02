@@ -26,7 +26,7 @@ These steps must be done only once.
 # Memory footprint
 Measurement of memory consumption was done by the following steps:
 - Use Arduino 1.8.9 + ArduinoNano board
-- Simplest sketch with serial print: ROM: 1532 bytes, RAM: 188 bytes
+- Simple sketch with serial print: ROM: 1532 bytes, RAM: 188 bytes
 - TinySDLogger without RTC: ROM : 6446 bytes (diff is 4914 bytes), RAM: 261 bytes (diff is 73 bytes)
 - TinySDLogger with RTC: ROM : 8298 bytes (diff is 6766 bytes), RAM: 471 bytes (diff is 283 bytes)
 
@@ -42,6 +42,7 @@ Result writing speed is ~2.7Kb per second.
 
 # Limitations
 - Support only SD card with FAT32 filesystem
+- Support only one SD card
 - Support only one log file
 - It is not possible to store any other files on this SD card. (they will be corrupted by logger!)
 - Close file method fills remaining bytes (to round up to 512 bytes) with spaces and line feed in the end. This may result in gaps between log sessions
