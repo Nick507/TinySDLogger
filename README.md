@@ -23,7 +23,7 @@ Before first usage, SD card must be prepared:
 
 These steps must be done only once.
 
-# Consumed memory
+# Memory footprint
 Measurement of memory consumption was done by the following steps:
 - Use Arduino 1.8.9 + ArduinoNano board
 - Simplest sketch with serial print: ROM: 1532 bytes, RAM: 188 bytes
