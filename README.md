@@ -33,8 +33,8 @@ Measurement of memory consumption was done by the following steps:
 Finally, TinySDLogger without RTC requires ~5K code size and 73 bytes of RAM.
 with RTC: ~7K code and 283 bytes of RAM. (almost size is because of RTC library itself)
 
-# Performance
-Performance measured on ArduinoNano borad.
+# Perfomance
+Perfomance measured on ArduinoNano borad.
 - TinySDLogger without RTC: 1000 records (39 bytes per record) - 14.5sec
 - TinySDLogger with RTC: 1000 records / (59 bytes per record) - 20.5sec
 
