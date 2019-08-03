@@ -9,7 +9,7 @@ Since library does not use in memory sector buffer (512 bytes), it is not possib
 - Use +128 clusters offset to store log file data (512 size of sector / 4 bytes per FAT32 record)
 - Use consequent allocation of sectors for log file. Benefit of this approach is that we do not need to search for free sector to append file, and do not do full scan during open file to find its last sector 
 
-TinySDLogger derived from Print class, which allows to use familiar print methods.
+TinySDLog class derived from Print class, which allows to use familiar print methods.
 
 NOTE: Do not call close() method after each write operation (unless your logs are too rare and is it crucial to not loose them).
 It is better to call close() method by timer (but do not use interrupts for this!), or after write N records, or after end of log session.
